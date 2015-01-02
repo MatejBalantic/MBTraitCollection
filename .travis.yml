@@ -1,0 +1,12 @@
+language: objective-c
+xcode_workspace: MBTraitCollection.xcworkspace
+xcode_scheme: MBTraitCollection
+xcode_sdk: iphonesimulator
+env:
+  matrix:
+   - TEST_SDK=iphonesimulator7.0 OS=7.0.3 NAME='iPhone 5'
+   - TEST_SDK=iphonesimulator7.0 OS=7.1 NAME='iPhone 5'
+   - TEST_SDK=iphonesimulator8.0 OS=8.0 NAME='iPhone 5'
+   - TEST_SDK=iphonesimulator8.0 OS=7.0.3 NAME='iPad Retina'
+   - TEST_SDK=iphonesimulator8.0 OS=7.1 NAME='iPad Retina'
+   - TEST_SDK=iphonesimulator8.0 OS=8.0 NAME='iPad Retina'
