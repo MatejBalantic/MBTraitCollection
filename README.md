@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/MatejBalantic/MBTraitCollection.svg)](1)
+[![Build Status](https://travis-ci.org/MatejBalantic/MBTraitCollection.svg)](https://travis-ci.org/MatejBalantic/MBTraitCollection)
 
 MBTraitCollection
 =================
@@ -34,7 +34,7 @@ Than, include it in your view controller and use it on >=iOS 7 targets
 
 ### What is a Trait Collection
 
-From [Apple Docs][2]: _A UITraitCollection object provides details about the characteristics of a UIViewController object, which manages a set of views that make up a portion of your app’s interface. These characteristics, or traits, define the size class, display scale, and device idiom of the view controller. When a view controller is created, a trait collection is automatically created for that view controller._
+From [Apple Docs][1]: _A UITraitCollection object provides details about the characteristics of a UIViewController object, which manages a set of views that make up a portion of your app’s interface. These characteristics, or traits, define the size class, display scale, and device idiom of the view controller. When a view controller is created, a trait collection is automatically created for that view controller._
 
 ### What are Trait collections good for
 
@@ -94,6 +94,5 @@ Trait collections are new as of iOS 8 and even if they compile with the latest S
 
 To solve that problem, I've created a category on UIViewController which exposes a new property `mbTraitCollection`. When accessing this property a backwards-compatible MBTraitCollection class will be lazy-loaded for you. Class is basically a wrapper around UITraitCollection and will use native behavior when possible (i.e. in iOS >= 8). On older iOS version, this class will use other available techniques to determine device characteristics for you, thus allowing you to use trait collection even on iOS 7.
 
+[1]: https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UITraitSet_ClassReference/index.html
 
-[1]: https://travis-ci.org/MatejBalantic/MBTraitCollection
-[2]: https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UITraitSet_ClassReference/index.html
