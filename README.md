@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/MatejBalantic/MBTraitCollection.svg)](https://travis-ci.org/MatejBalantic/MBTraitCollection) [![Coverage Status](https://coveralls.io/repos/MatejBalantic/MBTraitCollection/badge.png)](https://coveralls.io/r/MatejBalantic/MBTraitCollection)
-
+[![Build Status](https://travis-ci.org/MatejBalantic/MBTraitCollection.svg)](https://travis-ci.org/MatejBalantic/MBTraitCollection) 
 MBTraitCollection
 =================
 
